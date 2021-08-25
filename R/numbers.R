@@ -1,10 +1,13 @@
 # library(dplyr)
 # library(stringr)
 
+# devnagari <- c("०", "१", "२", "३", "४", "५", "६", "७", "८", "९")
+#
+# usethis::use_data(devnagari)
+#
+
+
 nepali_number <- function(data, var_name = nepali_number, col) {
-
-  devnagari <- c("०", "१", "२", "३", "४", "५", "६", "७", "८", "९")
-
 
   data %>%
     mutate({{ var_name }} :=

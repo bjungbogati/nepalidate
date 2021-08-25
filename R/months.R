@@ -1,10 +1,15 @@
+# nep_months <- c("वैशाख","जेठ","असार","साउन","भदौ","असोज","कात्तिक","मंसिर","पुष","माघ","फागुन","चैत")
+#
+# usethis::use_data(nep_months)
+
 
 #' @import dplyr
 
 nepali_month <- function(data, var_name = nepali_month, col){
 
-  nep_months <- c("वैशाख","जेठ","असार","साउन","भदौ","असोज","कात्तिक","मंसिर","पुष","माघ","फागुन","चैत")
 
+
+  # nep_months <- enc2utf8(nep_months)
 
   data %>%
     dplyr::mutate({{ var_name }} :=
