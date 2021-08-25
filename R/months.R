@@ -3,7 +3,6 @@
 
 nepali_month <- function(data, var_name = nepali_month, col){
 
-
   nep_months <- c("वैशाख","जेठ","असार","साउन","भदौ","असोज","कात्तिक","मंसिर","पुष","माघ","फागुन","चैत")
 
 
